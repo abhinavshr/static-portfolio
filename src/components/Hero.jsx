@@ -1,11 +1,13 @@
 import { motion as Motion, useScroll, useTransform } from "framer-motion";
 import { FloatingParticles } from "./particles/FloatingParticles.jsx";
 
+
 export function Hero() {
     const { scrollY } = useScroll();
     const y = useTransform(scrollY, [0, 500], [0, 150]);
     const opacity = useTransform(scrollY, [0, 300], [1, 0]);
     const scale = useTransform(scrollY, [0, 300], [1, 0.95]);
+    const name = "Sunistha Shrestha"; const letters = name.split("");
 
     return (
         <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -55,13 +57,12 @@ export function Hero() {
                         </Motion.span>
                     </Motion.div>
 
-                    <Motion.h1
-                        className="text-5xl md:text-6xl lg:text-7xl mb-6 tracking-tight"
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: 0.3 }}
-                    >
-                        Sunistha Shrestha
+                    <Motion.h1 className="text-5xl md:text-6xl lg:text-7xl mb-6 tracking-tight" initial="hidden" animate="visible" variants={{ visible: { transition: { staggerChildren: 0.08, repeat: Infinity, repeatDelay: 2 }, }, }} >
+                        {letters.map((char, index) => (
+                            <Motion.span key={index} variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 }, }} transition={{ duration: 0.3 }} >
+                                {char}
+                            </Motion.span>
+                        ))}
                     </Motion.h1>
 
                     <Motion.p
