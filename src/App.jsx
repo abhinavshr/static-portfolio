@@ -5,6 +5,7 @@ import AboutMe from "./components/AboutMe.jsx";
 import Education from "./components/Education.jsx";
 import { Skills } from "./components/Skills.jsx";
 import { CareerObjective } from "./components/CareerObjective.jsx";
+import { Contact } from "./components/Contact.jsx";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Education />
       <Skills />
       <CareerObjective />
+      <Contact />
     </div>
   );
 };
