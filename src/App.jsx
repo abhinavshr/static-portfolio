@@ -4,6 +4,7 @@ import { Hero } from "./components/Hero.jsx";
 import AboutMe from "./components/AboutMe.jsx";
 import Education from "./components/Education.jsx";
 import { Skills } from "./components/Skills.jsx";
+import { CareerObjective } from "./components/CareerObjective.jsx";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <AboutMe />
       <Education />
       <Skills />
+      <CareerObjective />
     </div>
   );
 };
