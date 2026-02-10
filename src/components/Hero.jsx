@@ -199,10 +199,10 @@ export function Hero() {
 
                 {/* Social Links (Optional, nice to have in Hero) */}
                 <div className="hero-text mt-12 flex justify-center gap-6 text-slate-400">
-                    <a href="https://github.com" target="_blank" rel="noreferrer" className="hover:text-white hover:scale-110 transition-all duration-300">
+                    <a href="https://github.com/sunisthashrestha" target="_blank" rel="noreferrer" className="hover:text-white hover:scale-110 transition-all duration-300">
                         <Github className="w-6 h-6" />
                     </a>
-                    <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="hover:text-blue-400 hover:scale-110 transition-all duration-300">
+                    <a href="https://www.linkedin.com/in/sunistha-shrestha-aa3216371/" target="_blank" rel="noreferrer" className="hover:text-blue-400 hover:scale-110 transition-all duration-300">
                         <Linkedin className="w-6 h-6" />
                     </a>
                 </div>
